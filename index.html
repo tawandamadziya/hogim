@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-brand">
+        <a href="#home">  <img src="assets/logo.png" alt="Church Image" class="logo-image"></a>
+    </div>
+    <div class="navbar-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+    <!-- Video Container with Overlay -->
+    <div class="video-container" id="home">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/mainbg.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay">
+            <h1>Welcome to H.O.G.I.M</h1>
+            <p>Serving with Faith and Love</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <img src="assets/3.jpg" alt="Church Image" class="about-image">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Our church, under the spiritual guidance of Pastor S Charamba, is a vibrant and devoted community of believers. We are united in our unwavering faith and commitment to serving God and our neighbors. In everything we do, we strive to reflect the love and teachings of Christ, welcoming everyone with open arms into our family of faith.
+                </p>
+                <p>
+                    At the heart of our ministry is a deep dedication to worshiping God, growing in His Word, and living out our faith through acts of love and service. Pastor S Charamba leads us with a passion for the Gospel, inspiring us to seek God's presence in all areas of our lives. We encourage spiritual growth and foster strong, lasting connections among our members.
+                </p>
+                <p>
+                    We invite you to join us for our weekly services, community events, and outreach programs. Together, under Pastor Charamba's leadership, we work to make a positive impact in the world, shining the light of God's love in every corner of our community.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="photos-section">
+        <h2>Gallery</h2>
+        <div class="photos-grid">
+            <img src="assets/1.jpg" alt="Church Event 1">
+            <img src="assets/10.jpg" alt="Church Event 2">
+            <img src="assets/5.jpg" alt="Church Event 3">
+            <img src="assets/4.jpg" alt="Church Event 4">
+        </div>
+        <div class="photos-grid">
+            <img src="assets/2.jpg" alt="Church Event 5">
+            <img src="assets/7.jpg" alt="Church Event 6">
+            <img src="assets/6.jpg" alt="Church Event 7">
+            <img src="assets/8.jpg" alt="Church Event 8">
+        </div>
+    </section>
+
+<!-- Videos Section -->
+<section id="videos" class="videos-section">
+    <h2>Videos</h2>
+    <div class="videos-grid">
+        <!-- First Video -->
+        <div class="video-wrapper">
+            <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/Oxn0eQT6Dqk" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <p>Sunday Service</p>
+        </div>
+
+        <!-- Second Video -->
+        <div class="video-wrapper">
+            <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/oQYSz1SMrHI?si=MA7qdFPSllKbN91-" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <p>Live Service</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+
+        </form>
+
+        <!-- Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7312035888503!2d18.489314699999998!3d-33.92231699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5c59998a0891%3A0x77fc46642f15d489!2s245%20Voortrekker%20Rd%2C%20Maitland%2C%20Cape%20Town%2C%207405!5e0!3m2!1sen!2sza!4v1728324089215!5m2!1sen!2sza" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/HourofGraceIM" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B27813960707&context=ARAKjqP1TDuiOoWlVwJPNXaZIc86yQOk5-apo_2m_7sKT2ghAsJ9eFVFT-r5c0Z51JastoEJw64FfIFdMDWKu2Zg41B3Cu7594AsMpNrqPwSJ-iVaScDvNJwKsMe_BIkkrFRusB7b81eFEYxth7hJ0yQJg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawFxCDxleHRuA2FlbQIxMAABHdLc2MVDAWigXNUEUwfwZlWqKo8RProRJNeGqMeDc_RuqgiMCJ4GrplOYA_aem_TdcEgZyjkU8ZNMB6QR-0Mw" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+        </form>
+            <p>
+                <a href="#home">Home</a> | 
+                <a href="#about">About</a> | 
+                <a href="#photos">Photos</a> | 
+                <a href="#videos">Videos</a> | 
+                <a href="#contact">Contact</a>
+            </p>
+            <p>&copy; 2024 HOGIM. <a href="https://tawaportfolio.netlify.app">All rights reserved.</a></p>
+        </div>
+    </footer>
+</body>
+</html>
